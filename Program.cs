@@ -4,11 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bodega Básica");
-            Ejemplos.BodegaBasica();
-            
-            Console.WriteLine("\nBodegas Multiples");
-            Ejemplos.MultiBodegaTipada();
+           // Console.WriteLine("Bodega Básica");
+           // Ejemplos.BodegaBasica();
+           // 
+           // Console.WriteLine("\nBodegas Multiples");
+           // Ejemplos.MultiBodegaTipada();
+
+            Console.WriteLine("Bodega Generica");
+            Ejemplos.BodegaGenerica();
+
         }
     }
 }

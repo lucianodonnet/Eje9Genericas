@@ -14,6 +14,7 @@ internal class Ejemplos
         //(un martillo entre las manzanas) y no escalaba cuando llegaban nuevos productos.
 
         var bodega = new Basica();
+       
 
         // 1) Almacenar referencias a Alimento y Herramienta
         bodega.Agregar(new Alimento("Manzana"));
@@ -79,6 +80,16 @@ internal class Ejemplos
 
     public static void BodegaGenerica()
     {
-        throw new NotImplementedException();
+        // Crear bodegas con un objeto inicial
+        Generica<Alimento> bAlimentos = new Generica<Alimento>(new Alimento("Manzana"));
+        Generica<Herramienta> bHerramientas = new Generica<Herramienta>(new Herramienta("Martillo"));
+        Generica<ProductoElectronico> bProductoElectronico = new Generica<ProductoElectronico>(new ProductoElectronico("Termo","Samnsung"));
+
+
+        // Listar mercancía
+        bAlimentos.ListarMercancia(); // Salida: Manzana, Banana
+        bHerramientas.ListarMercancia(); // Salida: Martillo, Destornillador
+      bProductoElectronico.ListarMercancia();
+
     }
 }
